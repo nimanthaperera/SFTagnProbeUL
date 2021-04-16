@@ -1,0 +1,37 @@
+#cmsenv
+
+#For new id Global&&PF&&(dR<0.8)
+#cmsRun ciccio_NP_II.py MuonT3MUID2018PTE mtau3muid gentrack data data_all pt_eta default #DATA
+#cmsRun ciccio_NP_II.py MuonT3MUID2018PTE mtau3muid gentrack mc mc_all pt_eta default #MC
+
+#cmsRun ciccio_NP_II.py MuonT3MUID2018PTE mtau3muid gentrack data data_all pt_eta default #DATA
+#cmsRun ciccio_NP_II.py MuonT3MUID2018PTE mtau3muid gentrack mc mc_all pt_eta default #MC
+
+cmsRun ciccio_NP_II.py MuonT3MUID2018DRM1 mtau3muid gentrack data data_all drm1 default #DATA
+cmsRun ciccio_NP_II.py MuonT3MUID2018DRM1 mtau3muid gentrack mc mc_all drm1 default #MC
+
+cmsRun ciccio_NP_II.py MuonT3MUID2018DRM1E mtau3muid gentrack data data_all drm1_eta default #DATA
+cmsRun ciccio_NP_II.py MuonT3MUID2018DRM1E mtau3muid gentrack mc mc_all drm1_eta default #MC
+
+#cmsRun ciccio_NP_II.py PFID2018PTE pf gentrack data data_all pt_eta default #DATA
+#cmsRun ciccio_NP_II.py PFID2018PTE pf gentrack mc mc_all pt_eta default #MC
+
+#cmsRun ciccio_NP_II.py Standard2017PTE looseid gentrack data data_all pt_eta default #DATA
+#cmsRun ciccio_NP_II.py Standard2017PTE looseid gentrack mc mc_all pt_eta default #MC
+
+#cmsRun ciccio_NP_II.py Global2018PTE glbid gentrack data data_all pt_eta default #DATA
+#cmsRun ciccio_NP_II.py Global2018PTE glbid gentrack mc mc_all pt_eta default #MC
+
+cmsRun ciccio_NP_II.py MuonT3MUID2018DRE mtau3muid gentrack data data_all DeltaR default #DATA
+cmsRun ciccio_NP_II.py MuonT3MUID2018DRE mtau3muid gentrack mc mc_all DeltaR default #MC
+
+#cmsRun ciccio_NP_II.py Soft2017PTE softid gentrack data data_all pt_eta default #DATA
+#cmsRun ciccio_NP_II.py Soft2017PTE softid gentrack mc mc_all pt_eta default #MC
+
+#cmsRun ciccio_NP_II.py Medium2017PTE mediumid gentrack data data_all pt_eta default #DATA
+#cmsRun ciccio_NP_II.py Medium2017PTE mediumid gentrack mc mc_all pt_eta default #MC
+
+#cmsRun ciccio_NP_II.py Tight2017PTE tightid gentrack data data_all pt_eta default #DATA
+#cmsRun ciccio_NP_II.py Tight2017PTE tightid gentrack mc mc_all pt_eta default #MC
+
+
