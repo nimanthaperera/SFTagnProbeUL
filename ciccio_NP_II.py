@@ -175,7 +175,7 @@ def FillBin(par):
         #DEN.pt = cms.vdouble(3.0, 3.25, 3.5, 3.75, 4.0, 4.5, 5.0, 6.0, 8.0, 10.0, 15.0, 20.0,30.0,40.0)#Gael (29 Nov 2017)
         DEN.pt= cms.vdouble(2.0, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.5, 5.0, 6.0, 8.0, 10.0, 15.0, 20.0, 30.0, 40.0) # Gael (19 feb 2018)
     elif par == 'DeltaR':
-        DEN.pt = cms.vdouble(2.0,40.0)
+        DEN.pt = cms.vdouble(2.0,500.0)
         DEN.abseta = cms.vdouble(0.,0.9,1.2,2.4)
         DEN.pair_DeltaR = cms.vdouble(0., 0.2, 0.3, 0.4, 0.5,0.6,0.7)
     elif par == 'tag_instLumi':
