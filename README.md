@@ -1,4 +1,19 @@
+# Comments by Nimantha
+
+##Steps that need to be followed to produce the SF
+
 Works with CMSSW_10_4_0
+
+###Steps:
+
+1. doSkim
+2. doBranch3
+3. doWeight
+4. doSkimdR
+5. doSkimpe
+6. doFit2
+
+All of this is executed together in doAll
 
 
 
