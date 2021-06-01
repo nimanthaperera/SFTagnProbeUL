@@ -18,7 +18,7 @@
         },
         "plot"      :
         {
-            "x"                 : [3.0, 40.0, "Pt (GeV)"],
+            "x"                 : [2.0, 40.0, "Pt (GeV)"],
             "yAbsolute"         : [0.0, 1.4, "Efficiency"],
             "yRatio"            : [0.65, 1.35, "Data/MC"],
             "legend"            : ["LooseId", "Data", "MC weighted"],

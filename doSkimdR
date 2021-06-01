@@ -1,0 +1,22 @@
+# skim wiht dr<0.8
+
+#2017
+
+./skimTree "TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_BA_BA.root" TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_BA.root -c "(pair_DeltaR < 0.8)"
+
+rm TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_BA_BA.root
+
+./skimTree "weightedNP_UL2017_SingleMuon_BA_BA_BA.root" weightedNP_UL2017_SingleMuon_BA_BA.root -c "(pair_DeltaR < 0.8)"
+
+rm weightedNP_UL2017_SingleMuon_BA_BA_BA.root
+
+#2018
+
+./skimTree "TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_BA_BA.root" TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_BA.root -c "(pair_DeltaR < 0.8)"
+
+rm TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_BA_BA.root
+
+./skimTree "weightedNP_UL2018_SingleMuon_BA_BA_BA.root" weightedNP_UL2018_SingleMuon_BA_BA.root -c "(pair_DeltaR < 0.8)"
+
+rm weightedNP_UL2018_SingleMuon_BA_BA_BA.root
+

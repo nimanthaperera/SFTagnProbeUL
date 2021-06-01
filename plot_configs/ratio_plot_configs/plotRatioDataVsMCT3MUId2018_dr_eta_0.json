@@ -18,9 +18,9 @@
         },
         "plot"      :
         {
-            "x"                 : [0.0, 0.9, "#DeltaR"],
+            "x"                 : [0.0, 0.55, "#DeltaR"],
             "yAbsolute"         : [0.0, 1.4, "Efficiency"],
-            "yRatio"            : [0.65, 1.35, "Data/MC"],
+            "yRatio"            : [0.0, 1.1, "Data/MC"],
             "legend"            : ["Tau3MuId", "Data", "MC weighted"],
             "caption"           : "2018 Data (0<eta<0.9)",
             "logo"              : ["", ""],

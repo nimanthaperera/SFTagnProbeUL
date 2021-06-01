@@ -1,0 +1,61 @@
+#2017
+#2017 Data
+
+python addBranch3 TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL.root TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA.root "numpy.sqrt((tag_eta-eta)*(tag_eta-eta)+numpy.fabs(tag_phi-phi)*numpy.fabs(tag_phi-phi));tag_eta;eta;tag_phi;phi" pair_DeltaR1
+
+python addBranch3  TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA.root TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_II.root "numpy.sqrt((tag_eta-eta)*(tag_eta-eta)+(numpy.fabs(tag_phi-phi)-2*3.1415927)*(numpy.fabs(tag_phi-phi)-2*3.1415927));tag_eta;eta;tag_phi;phi" pair_DeltaR2
+
+python addBranch3 TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_II.root TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_II_BA.root "numpy.minimum(pair_DeltaR1,pair_DeltaR2);pair_DeltaR1;pair_DeltaR2" pair_DeltaR
+
+python addBranch3  -i True TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_II_BA.root TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_BA.root "Glb*PF*(pair_DeltaR<0.8);Glb;PF;pair_DeltaR" MuonT3MUID
+
+python addBranch3  -i True TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_BA.root TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_BA_BA.root "Glb*PF;Glb;PF" PfGlobalID
+
+rm TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL.root TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA.root TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_II.root TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_II_BA.root TnPTreeJPsi_UL2017_SingleMuon_Run2017_GoldenJSON_NPALL_BA_BA.root
+
+#2017 MC
+#
+python addBranch3  TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP.root TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA.root "numpy.sqrt((tag_eta-eta)*(tag_eta-eta)+numpy.fabs(tag_phi-phi)*numpy.fabs(tag_phi-phi));tag_eta;eta;tag_phi;phi" pair_DeltaR1
+
+python addBranch3 TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA.root TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II.root "numpy.sqrt((tag_eta-eta)*(tag_eta-eta)+(numpy.fabs(tag_phi-phi)-2*3.1415927)*(numpy.fabs(tag_phi-phi)-2*3.1415927));tag_eta;eta;tag_phi;phi" pair_DeltaR2
+
+python addBranch3 TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II.root TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II_BA.root "numpy.minimum(pair_DeltaR1,pair_DeltaR2);pair_DeltaR1;pair_DeltaR2" pair_DeltaR
+
+python addBranch3  -i True TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II_BA.root TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA.root "Glb*PF*(pair_DeltaR<0.8);Glb;PF;pair_DeltaR" MuonT3MUID
+
+python addBranch3  -i True TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA.root TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA_BA.root "Glb*PF;Glb;PF" PfGlobalID
+
+#cp TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA.root Analysis_id
+ 
+rm TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP.root TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA.root TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II.root TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II_BA.root TnPTreeJPsi_UL2017_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA.root
+
+#2018
+#2018 Data
+
+python addBranch3 TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL.root TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA.root "numpy.sqrt((tag_eta-eta)*(tag_eta-eta)+numpy.fabs(tag_phi-phi)*numpy.fabs(tag_phi-phi));tag_eta;eta;tag_phi;phi" pair_DeltaR1
+
+python addBranch3 TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA.root TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_II.root "numpy.sqrt((tag_eta-eta)*(tag_eta-eta)+(numpy.fabs(tag_phi-phi)-2*3.1415927)*(numpy.fabs(tag_phi-phi)-2*3.1415927));tag_eta;eta;tag_phi;phi" pair_DeltaR2
+
+python addBranch3 TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_II.root TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_II_BA.root "numpy.minimum(pair_DeltaR1,pair_DeltaR2);pair_DeltaR1;pair_DeltaR2" pair_DeltaR
+
+python addBranch3  -i True TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_II_BA.root TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_BA.root "Glb*PF*(pair_DeltaR<0.8);Glb;PF;pair_DeltaR" MuonT3MUID
+
+python addBranch3  -i True TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_BA.root TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_BA_BA.root "Glb*PF;Glb;PF" PfGlobalID
+
+rm TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL.root TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA.root TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_II.root TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_II_BA.root TnPTreeJPsi_UL2018_SingleMuon_Run2018_GoldenJSON_NPALL_BA_BA.root
+#2018 MC
+
+python addBranch3 TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP.root TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA.root "numpy.sqrt((tag_eta-eta)*(tag_eta-eta)+numpy.fabs(tag_phi-phi)*numpy.fabs(tag_phi-phi));tag_eta;eta;tag_phi;phi" pair_DeltaR1
+
+python addBranch3 TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA.root TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II.root "numpy.sqrt((tag_eta-eta)*(tag_eta-eta)+(numpy.fabs(tag_phi-phi)-2*3.1415927)*(numpy.fabs(tag_phi-phi)-2*3.1415927));tag_eta;eta;tag_phi;phi" pair_DeltaR2
+
+python addBranch3 TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II.root TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II_BA.root "numpy.minimum(pair_DeltaR1,pair_DeltaR2);pair_DeltaR1;pair_DeltaR2" pair_DeltaR
+
+python addBranch3  -i True TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II_BA.root TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA.root "Glb*PF*(pair_DeltaR<0.8);Glb;PF;pair_DeltaR" MuonT3MUID
+
+python addBranch3  -i True TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA.root TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA_BA.root "Glb*PF;Glb;PF" PfGlobalID
+
+#cp TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA.root Analysis_id
+
+rm TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP.root TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA.root TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II.root TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_II_BA.root TnPTreeJPsi_UL2018_JpsiToMuMu_JpsiPt8_TuneCP5_13TeV_NP_BA_BA.root
+

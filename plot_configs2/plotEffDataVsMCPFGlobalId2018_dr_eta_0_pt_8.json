@@ -1,0 +1,41 @@
+{
+    "PFNGlobalID_2018"   :
+    {
+        "comment"   : "Efficiency plots for Data and MC with PFnGlobalId",
+        "inputs"    :
+        {
+            "input_2"   :
+            {
+                "label"             : "PFNGlobalID_Data",
+                "legendEntry"       : "PFNGlobalID Data 2018",
+                "filename"          : "EfficiencyPFNGlobalID2018DRE/DATA_data_all/TnP_MC_NUM_PFGlobalID_DEN_genTracks_PAR_DeltaR.root", 
+                "directory"         : "tpTree/PfGlobalCutid_NUM_PFGlobalID_DEN_genTracks_PAR_DeltaR",
+                "binnedVariable"    : "pair_DeltaR_PLOT_abseta_bin0_&_pt_bin8"
+            },
+            "input_1"   :
+            {
+                "label"             : "PFNGlobalID_MC",
+                "legendEntry"       : "PFNGlobalID MC 2018 weighted",
+                "filename"          : "EfficiencyPFNGlobalID2018DRE/MC_mc_all/TnP_MC_NUM_PFGlobalID_DEN_genTracks_PAR_DeltaR.root",
+                "directory"         : "tpTree/PfGlobalCutid_NUM_PFGlobalID_DEN_genTracks_PAR_DeltaR",
+                "binnedVariable"    : "pair_DeltaR_PLOT_abseta_bin0_&_pt_bin8"
+            }
+        },
+        "plot"      :
+        {
+            "x"                 : [0.0, 0.55, "#DeltaR"],
+            "y"                 : [0.0, 1.3, "Efficiency"],
+            "legendTitle"       : "",
+            "caption"           : "2018 Data (0<eta<0.9 && 4.5<pt<5.0)",
+            "logo"              : ["", ""],
+            "colorMap"          : [4, 2],
+            "markerMap"         : [20, 21]
+        },
+        "output"    :
+        {
+            "directory"         : "PFnGlbIDplots/2018/dr_eta_0_to_0p9_pt_4p5_to_5p0",
+            "filenamePlot"     : "EffVsdr_eta_0_to_0p9_pt_4p5_to_5p0",
+            "fileType"          : ["png", "pdf"]
+        }
+    }
+}

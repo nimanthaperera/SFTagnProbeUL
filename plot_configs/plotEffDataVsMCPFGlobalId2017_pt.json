@@ -1,0 +1,41 @@
+{
+    "PFNGlobalID_2017"   :
+    {
+        "comment"   : "Effiiciency plots for Data and MC with PFNGlobalID",
+        "inputs"    :
+        {
+            "input_2"   :
+            {
+                "label"             : "PFNGlobalID_Data",
+                "legendEntry"       : "PFNGlobalID Data 2017",
+                "filename"          : "EfficiencyPFNGlobalID2017PT/DATA_data_all/TnP_MC_NUM_PFGlobalID_DEN_genTracks_PAR_pt.root", 
+                "directory"         : "tpTree/PfGlobalCutid_NUM_PFGlobalID_DEN_genTracks_PAR_pt",
+                "binnedVariable"    : "pt"
+            },
+            "input_1"   :
+            {
+                "label"             : "PFNGlobalID_MC",
+                "legendEntry"       : "PFNGlobalID MC 2017 weighted",
+                "filename"          : "EfficiencyPFNGlobalID2017PT/MC_mc_all/TnP_MC_NUM_PFGlobalID_DEN_genTracks_PAR_pt.root",
+                "directory"         : "tpTree/PfGlobalCutid_NUM_PFGlobalID_DEN_genTracks_PAR_pt",
+                "binnedVariable"    : "pt"
+            }
+        },
+        "plot"      :
+        {
+            "x"                 : [2.0, 40.0, "Pt (GeV)"],
+            "y"                 : [0.0, 1.4, "Efficiency"],
+            "legendTitle"       : "",
+            "caption"           : "2017 Data",
+            "logo"              : ["", ""],
+            "colorMap"          : [4, 2],
+            "markerMap"         : [20, 21]
+        },
+        "output"    :
+        {
+            "directory"         : "PFnGlbIDplots/2017/pt",
+            "filenamePlot"     : "EffVsPt",
+            "fileType"          : ["png", "pdf"]
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "PFNGlobalID_2018"   :
+    {
+        "comment"   : "Efficiency plots for Data and MC with PFNGlobalID",
+        "inputs"    :
+        {
+            "input_2"   :
+            {
+                "label"             : "PFnGlobalId_Data",
+                "legendEntry"       : "PFnGlobalId Data 2018",
+                "filename"          : "EfficiencyPFNGlobalID2018PTE/DATA_data_all/TnP_MC_NUM_PFGlobalID_DEN_genTracks_PAR_pt_eta.root", 
+                "directory"         : "tpTree/PfGlobalCutid_NUM_PFGlobalID_DEN_genTracks_PAR_pt_eta",
+                "binnedVariable"    : "pt_PLOT_abseta_bin0"
+            },
+            "input_1"   :
+            {
+                "label"             : "PFnGlobalId_MC",
+                "legendEntry"       : "PFnGlobalId MC 2018 weighted",
+                "filename"          : "EfficiencyPFNGlobalID2018PTE/MC_mc_all/TnP_MC_NUM_PFGlobalID_DEN_genTracks_PAR_pt_eta.root",
+                "directory"         : "tpTree/PfGlobalCutid_NUM_PFGlobalID_DEN_genTracks_PAR_pt_eta",
+                "binnedVariable"    : "pt_PLOT_abseta_bin0"
+            }
+        },
+        "plot"      :
+        {
+            "x"                 : [2.0, 40.0, "Pt (GeV)"],
+            "y"                 : [-0.1, 1.4, "Efficiency"],
+            "legendTitle"       : "",
+            "caption"           : "2018 Data (0<eta<0.9)",
+            "logo"              : ["", ""],
+            "colorMap"          : [4, 2],
+            "markerMap"         : [20, 21]
+        },
+        "output"    :
+        {
+            "directory"         : "PFnGlbIDplots/2018/pt_eta_0_to_0p9",
+            "filenamePlot"     : "EffVspt_eta_0_to_0p9",
+            "fileType"          : ["png", "pdf"]
+        }
+    }
+}

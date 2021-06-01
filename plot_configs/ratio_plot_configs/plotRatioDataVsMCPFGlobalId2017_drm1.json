@@ -1,0 +1,36 @@
+{
+    "PFNGlobalID_2017"   :
+    {
+        "comment"   : "Efficiency plots for Data and MC with PFNGlobalID",
+        "input1"    :
+        {
+            "label"             : "PFnGlobalId_Data",
+            "filename"          : "EfficiencyPFNGlobalID2017DRM1/DATA_data_all/TnP_MC_NUM_PFGlobalID_DEN_genTracks_PAR_drm1.root",
+            "directory"         : "tpTree/PfGlobalCutid_NUM_PFGlobalID_DEN_genTracks_PAR_drm1",
+            "binnedVariable"    : "pair_drM1"
+        },
+        "input2"    :
+        {
+            "label"             : "PFnGlobalId_MC",
+            "filename"          : "EfficiencyPFNGlobalID2017DRM1/MC_mc_all/TnP_MC_NUM_PFGlobalID_DEN_genTracks_PAR_drm1.root",
+            "directory"         : "tpTree/PfGlobalCutid_NUM_PFGlobalID_DEN_genTracks_PAR_drm1",
+            "binnedVariable"    : "pair_drM1"
+        },
+        "plot"      :
+        {
+            "x"                 : [0.0, 1.5, "#DeltaR_{M1}"],
+            "yAbsolute"         : [0.0, 1.4, "Efficiency"],
+            "yRatio"            : [0.65, 1.35, "Data/MC"],
+            "legend"            : ["PFnGlobalId", "Data", "MC weighted"],
+            "caption"           : "2017 Data",
+            "logo"              : ["", ""],
+            "colorMap"          : [4, 2, 4]
+        },
+        "output"    :
+        {
+            "directory"         : "PFnGlbIDplots/2017/ratio/drm1",
+            "filenameRatio"     : "Ratio_drm1",
+            "fileType"          : ["png", "pdf"]
+        }
+    }
+}

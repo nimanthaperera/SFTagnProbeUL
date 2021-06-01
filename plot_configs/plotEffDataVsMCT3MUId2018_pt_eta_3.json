@@ -23,7 +23,7 @@
         },
         "plot"      :
         {
-            "x"                 : [3.0, 40.0, "Pt (GeV)"],
+            "x"                 : [2.0, 40.0, "Pt (GeV)"],
             "y"                 : [-0.1, 1.4, "Efficiency"],
             "legendTitle"       : "",
             "caption"           : "2018 Data (2.1<eta<2.4)",
