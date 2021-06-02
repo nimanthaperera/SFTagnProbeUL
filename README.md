@@ -14,7 +14,7 @@ Works with CMSSW_10_4_0
 All of this is executed together in doAll
 
 7. doPlot / doPlotRatio	-	Produce the relevant plots
-8. doSF 	-	Produce the root files anf JSON files with the SFs.
+8. doSF 	-	Produce the root files and JSON files with the SFs.
 
 The skimming, branching, adding weight & plotting tools are explained as follows in the original TnPUtils repo.
 
