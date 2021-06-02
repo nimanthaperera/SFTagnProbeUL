@@ -16,7 +16,7 @@ All of this is executed together in doAll
 7. doPlot / doPlotRatio	-	Produce the relevant plots
 8. doSF 	-	Produce the root files anf JSON files with the SFs.
 
-The skimming, branching, adding weight & plotting tools are explained as follows int the original TnPUtilts repo.
+The skimming, branching, adding weight & plotting tools are explained as follows in the original TnPUtils repo.
 
  
 # Tag-and-Probe Utilities
