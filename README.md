@@ -1,22 +1,24 @@
 # Comments by Nimantha
 
-##Steps that need to be followed to produce the SF
-
 Works with CMSSW_10_4_0
 
-###Steps:
+## Steps to produce the SFs:
 
-1. doSkim
-2. doBranch3
-3. doWeight
-4. doSkimdR
-5. doSkimpe
-6. doFit2
+1. doSkim	-	Skims the ntuples with the initial selections.
+2. doBranch3	-	Add the branches for pair_DeltaR and PF&Glb ID
+3. doWeight	-	Does pile up re-weighting
+4. doSkimdR	-	Cuts pair_DeltaR<0.8
+5. doSkimpe	-	remove the phase_space (eta<1.2 && pt<3.5)
+6. doFit2	-	Do the fitting and produce the root files with efficiencies
 
 All of this is executed together in doAll
 
+7. doPlot / doPlotRatio	-	Produce the relevant plots
+8. doSF 	-	Produce the root files anf JSON files with the SFs.
 
+The skimming, branching, adding weight & plotting tools are explained as follows int the original TnPUtilts repo.
 
+ 
 # Tag-and-Probe Utilities
 
 This repository holds a set of utilities/macros to work with Tag-and-Probe (TnP) ntuples.
